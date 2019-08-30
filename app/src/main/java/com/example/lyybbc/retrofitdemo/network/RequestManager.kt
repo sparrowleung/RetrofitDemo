@@ -15,7 +15,7 @@ class RequestManager {
                     .subscribe(RequestObserver(iRequestFunction))
         }
 
-        fun <T:Any> onRequest(IOnLifeFunction:IOnLifeFunction<T>, iRequestFunction: IRequestFunction<T>) {
+        fun <T:Any> onRequest(iOnLifeFunction:IOnLifeFunction<T>, iRequestFunction: IRequestFunction<T>) {
 
         }
     }
