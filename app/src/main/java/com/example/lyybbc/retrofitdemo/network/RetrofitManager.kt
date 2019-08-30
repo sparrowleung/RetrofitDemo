@@ -54,7 +54,7 @@ class  RetrofitManager {
                 .baseUrl(baseUrl)
                 .client(onOkHttpSetting())
                 .addConverterFactory(GsonConverterFactory.create())
-                .addCallAdapterFactory(OnLifeCallAdapterFactory(activity))
+                .addCallAdapterFactory(OnLifeCallAdapterFactory(activity, true))
                 .build()
                 .create(clazz)
     }
